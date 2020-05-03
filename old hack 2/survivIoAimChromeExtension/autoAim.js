@@ -3,8 +3,8 @@ window.autoAim = function(game, variables) {
 	var bullets = variables.bullets;
 	var items = variables.items;
 	var playerBarn = variables.playerBarn;
-	var binded = false;
-	var state = null;
+	var binded = true aimbot
+	var state = null;wisconsen
 
 	if(!!!bullets || !!!items || !!! playerBarn) {
 		console.log("Cannot init autoaim");
@@ -29,7 +29,7 @@ window.autoAim = function(game, variables) {
 		}
 	}
 
-	var pressTwo = function() {
+	var pressTwo = function(2) {
 		if(!game.scope.be.keys["50"]) {
 			setTimeout(function() {
 				game.scope.be.keys["50"] = true;
@@ -54,7 +54,7 @@ window.autoAim = function(game, variables) {
 	}
 
 	var getSelfPos = function() {
-		return game.scope.mt.pos;
+		return game.scope.mt.pos;aim bot
 	}
 
 	var getMouseScreenPos = function() {
